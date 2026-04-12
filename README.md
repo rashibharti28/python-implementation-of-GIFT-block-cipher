@@ -20,17 +20,7 @@ It includes detailed round-by-round debugging output and verification using stan
 * **Number of rounds:** 28
 * **Structure:** Substitution-Permutation Network (SPN)
 
----
 
-## ⚙️ Features
-
-✅ Full GIFT-64 encryption implementation
-✅ Round-by-round debug output
-✅ Standard test vector verification
-✅ Easy-to-read and modular Python code
-✅ Suitable for learning and research purposes
-
----
 
 ## 🧠 Algorithm Structure
 
