@@ -1,11 +1,11 @@
-# 🔐 GIFT-64 Block Cipher (Python Implementation)
+#  GIFT-64 Block Cipher (Python Implementation)
 
 This repository contains a **from-scratch Python implementation** of the **GIFT-64 lightweight block cipher** with a 128-bit key.
 It includes detailed round-by-round debugging output and verification using standard test vectors.
 
 ---
 
-## 📌 Overview
+##  Overview
 
 **GIFT-64** is a lightweight block cipher designed for:
 
@@ -13,7 +13,7 @@ It includes detailed round-by-round debugging output and verification using stan
 * IoT and embedded systems
 * Energy-efficient cryptography
 
-### 🔹 Specifications
+###  Specifications
 
 * **Block size:** 64 bits
 * **Key size:** 128 bits
@@ -22,7 +22,7 @@ It includes detailed round-by-round debugging output and verification using stan
 
 
 
-## 🧠 Algorithm Structure
+##  Algorithm Structure
 
 Each round of GIFT-64 consists of:
 
@@ -33,13 +33,13 @@ Each round of GIFT-64 consists of:
 
 ---
 
-## 🧪 Test Vectors
+##  Test Vectors
 
 The implementation is verified using standard test vectors
 
 
 
-## ▶️ Usage
+## ▶ Usage
 
 ### 🔹 Run Encryption Test
 
@@ -47,28 +47,28 @@ The implementation is verified using standard test vectors
 python main.py
 ```
 
-### 🔹 Sample Output
+###  Sample Output
 
 ```
-=== GIFT-64 ENCRYPTION TEST ===
+ GIFT-64 ENCRYPTION TEST 
 
 Plaintext : 0x0
 Expected  : 0xf62bc3ef34f775ac
 Got       : 0xf62bc3ef34f775ac
-✅ PASS
+ PASS
 
 Plaintext : 0xfedcba9876543210
 Expected  : 0xc1b71f66160ff587
 Got       : 0xc1b71f66160ff587
-✅ PASS
+ PASS
 ```
 
 ---
 
-## 🛠️ Project Structure
+##  Project Structure
 
 ```
-├── main.py              # Runs encryption tests
+            
 ├── gift64.py           # Core cipher implementation
 ├── test_vectors.py     # Test cases
 └── README.md
@@ -76,7 +76,7 @@ Got       : 0xc1b71f66160ff587
 
 ---
 
-## 🐞 Debugging Support
+## Debugging Support
 
 The implementation prints intermediate values for each round:
 
@@ -97,14 +97,14 @@ This helps in:
 
 If test cases fail:
 
-* ❌ Incorrect key schedule
-* ❌ Missing round constants
-* ❌ Wrong bit permutation
-* ❌ Applying full key instead of partial key
+-  Incorrect key schedule
+-  Missing round constants
+- Wrong bit permutation
+-  Applying full key instead of partial key
 
 ---
 
-## 📚 Learning Outcomes
+##  Learning Outcomes
 
 By working with this project, you will understand:
 
@@ -118,7 +118,7 @@ By working with this project, you will understand:
 
 
 
-## 🙌 References
+##  References
 
 
 
