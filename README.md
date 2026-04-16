@@ -41,7 +41,7 @@ The implementation is verified using standard test vectors
 
 ## ▶ Usage
 
-### 🔹 Run Encryption Test
+###  Run Encryption Test
 
 ```bash
 python main.py
@@ -93,7 +93,7 @@ This helps in:
 
 ---
 
-## 🚨 Common Pitfalls
+##  Common Pitfalls
 
 If test cases fail:
 
