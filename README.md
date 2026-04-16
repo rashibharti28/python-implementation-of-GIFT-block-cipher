@@ -39,7 +39,7 @@ The implementation is verified using standard test vectors
 
 
 
-## ▶ Usage
+##  Usage
 
 ###  Run Encryption Test
 
