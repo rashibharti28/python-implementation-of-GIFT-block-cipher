@@ -31,10 +31,10 @@ def permute_bits(state):
 # Add Round Key 
 def add_round_key(state, key, rc):
 
-    # key is 128-bit → convert to bit list
+    # key is 128-bit - convert to bit list
     key_bits = [(key >> i) & 1 for i in range(128)]
 
-    # Apply key bits exactly like reference
+    
     kbc = 0
     for i in range(16):
         # bit positions
@@ -45,10 +45,10 @@ def add_round_key(state, key, rc):
         kbc += 1
 
     # round constants
-    RC_POS = [3,7,11,15,19,23]
+    rc_pos = [3,7,11,15,19,23]
     for i in range(6):
         if (rc >> i) & 1:
-            state ^= (1 << RC_POS[i])
+            state ^= (1 << rc_pos[i])
 
     # fixed bit
     state ^= (1 << 63)
@@ -77,16 +77,16 @@ def round_function(state, round_key, rc, debug=False):
 
 
 
-# KEY SCHEDULE 
 
 
+#key schedule
 def update_key(key):
-    # convert key into 32 nibbles (like reference)
+    # convert key into 32 nibbles 
     K = [(key >> (4*i)) & 0xF for i in range(32)]
 
     temp = [0]*32
 
-    # rotate entire key (>>32 bits → 8 nibbles)
+    # rotate entire key
     for i in range(32):
         temp[i] = K[(i+8) % 32]
 
@@ -115,7 +115,7 @@ def update_key(key):
 
 
 # Round constant
-GIFT_RC = [
+GIFT_rc = [
 0x01,0x03,0x07,0x0F,0x1F,0x3E,0x3D,0x3B,
 0x37,0x2F,0x1E,0x3C,0x39,0x33,0x27,0x0E,
 0x1D,0x3A,0x35,0x2B,0x16,0x2C,0x18,0x30,
@@ -132,7 +132,7 @@ def gift64_encrypt(state, master_key, debug=False):
         if debug:
             print(f"\n ROUND {r}")
 
-        rc = GIFT_RC[r]
+        rc = GIFT_rc[r]
 
         state = round_function(state, key, rc, debug)
 
