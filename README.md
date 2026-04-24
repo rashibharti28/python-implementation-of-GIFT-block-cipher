@@ -44,7 +44,7 @@ The implementation is verified using standard test vectors
 ###  Run Encryption Test
 
 ```bash
-python main.py
+python gift64.py
 ```
 
 ###  Sample Output
