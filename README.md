@@ -122,7 +122,7 @@ By working with this project, you will understand:
 
 This implementation is based on the official GIFT block cipher specification:
 
--A.Banik et al., "GIFT: A Small Present"  
+ -A.Banik et al., "GIFT: A Small Present"  
   https://eprint.iacr.org/2017/622.pdf  
 
 - Official GIFT Repository (Test Vectors)  
