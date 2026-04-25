@@ -118,7 +118,23 @@ By working with this project, you will understand:
 
 
 
-##  References
+## References
+
+This implementation is based on the official GIFT block cipher specification:
+
+-A.Banik et al., "GIFT: A Small Present"  
+  https://eprint.iacr.org/2017/622.pdf  
+
+- Official GIFT Repository (Test Vectors)  
+  https://github.com/giftcipher/gift  
+
+- GIFT Cipher Website  
+  https://giftcipher.github.io/gift/  
+
+## Note
+
+This implementation was developed independently in Python for academic purposes. 
+Test vectors were used only for verification of correctness.
 
 
 
